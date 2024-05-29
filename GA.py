@@ -1,6 +1,7 @@
 from random import choices, randint, randrange, random, sample
 from typing import List, Optional, Callable, Tuple
 
+# Create data structures to use later
 Genome = List[int]
 Population = List[Genome]
 PopulateFunc = Callable[[], Population]
