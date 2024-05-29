@@ -1,5 +1,6 @@
 # AI_MusicGen
 
+BE Project<br>
 This project uses a Genetic Algorithm to generate Musical melodies from scratch. It takes the required parameters from the users and saves the melodies in MIDI format locally. It uses multiple generations to converge on the desired results.
 <hr>
 
