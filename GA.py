@@ -1,6 +1,7 @@
 from random import choices, randint, randrange, random, sample
 from typing import List, Optional, Callable, Tuple
 
+# Create data structures to use later
 Genome = List[int]
 Population = List[Genome]
 PopulateFunc = Callable[[], Population]
@@ -10,7 +11,7 @@ CrossoverFunc = Callable[[Genome, Genome], Tuple[Genome, Genome]]
 MutationFunc = Callable[[Genome], Genome]
 PrinterFunc = Callable[[Population, int, FitnessFunc], None]
 
-# Swap sub-arrays from a random point
+# Swap sub-arrays from a random point to add randomization
 def single_point_crossover(a: Genome, b: Genome) -> Tuple[Genome, Genome]:
     if len(a) != len(b):
         raise ValueError("Genomes A and B must be of same length")
